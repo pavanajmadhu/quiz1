@@ -29,7 +29,7 @@ class Contestant {
   static getPlayerInfo(){
     var contestantInfoRef = database.ref('contestants');
     contestantInfoRef.on("value",(data)=>{
-      allContestants = data.val();
+      allContestantInfo = data.val();
     })
   }
 }

@@ -13,7 +13,13 @@ class Question {
   }
 
   hide(){
-    
+    this.title.hide();
+    this.input1.hide();
+    this.input2.hide();
+    this.button.hide();
+
+
+
   }
 
   display(){
@@ -37,18 +43,9 @@ class Question {
 
     this.button.mousePressed(()=>{
       
-      this.title.hide();
-      this.input1.hide();
-      this.button.hide();
-      this.input2.hide();
-      this.question.hide();
+     
     
-        this.option3.hide()
-        this.button.hide();
-        this.option1.hide();
-        this.option2.hide();
-
-        this.option4.hide();
+       
 
 
       contestant.name = this.input1.value();

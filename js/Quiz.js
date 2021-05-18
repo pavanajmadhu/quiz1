@@ -29,22 +29,35 @@ class Quiz {
   }
 
    play(){
-      //write code here to hide question elements
+     question.hide();
+     background("yellow")
 
-    //write code to change the background color here
+     textSize(30)
+     fill("white")
+     text("RESULT",350,30);
+     
+     Contestant.getPlayerInfo();
 
-    //write code to show a heading for showing the result of Quiz
-
-    //call getContestantInfo( ) here
-
-
-    //write condition to check if contestantInfor is not undefined
-
+     
     //write code to add a note here
     if(allContestantInfo !==undefined){
       fill("blue")
       textSize(20);
       text("note: contestant who's answers are right will be highlighted in green",130,230)
+      for(var cts in allContestantInfo){
+        var answer="2"
+        if(allContestantInfo[cts].answer===answer){
+          fill("green")
+        }
+        else{
+          fill("red")
+
+        }
+       yvalue=yvalue+30
+        textSize(20)
+        text(allContestantInfo[cts].name +" ;" + allContestantInfo[cts].answer,130,yvalue)
+        text("texta",130,250)
+      }
     }
 
     //write code to highlight contest who answered correctly

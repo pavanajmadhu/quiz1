@@ -1,10 +1,11 @@
 var canvas, backgroundImage;
 
 var gameState = 0;
-var contestantCount;
-var allContestants;
+var contestantCount=0;
+var allContestantInfo;
 var answer;
 var database;
+var yvalue
 
 var question, contestant, quiz;
 
